@@ -1,0 +1,23 @@
+#include <iostream>
+
+int main() {
+    int age1 = 4200; // Age of the first cave painting
+    int age2 = 8500; // Age of the second cave painting
+    int age3 = 1000; // Age of the third cave painting
+    int age4 = 1300; // Age of the fourth cave painting
+
+    if (age1 > age2 && age1 > age3 && age1 > age4) {
+        std::cout << "The oldest cave painting is 4200 years old." << std::endl;
+    }
+    else if (age2 > age1 && age2 > age3 && age2 > age4) {
+        std::cout << "The oldest cave painting is 8500 years old." << std::endl;
+    }
+    else if (age3 > age1 && age3 > age2 && age3 > age4) {
+        std::cout << "The oldest cave painting is 1000 years old." << std::endl;
+    }
+    else {
+        std::cout << "The oldest cave painting is 1300 years old." << std::endl;
+    }
+
+    return 0;
+}

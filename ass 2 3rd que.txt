@@ -1,0 +1,23 @@
+#include <iostream>
+
+class Plastic {
+private:
+    double costPerKg;
+
+public:
+    // Default constructor
+    Plastic() {
+        costPerKg = 12.0; // Set the cost per kg to $12
+    }
+    double calculateEarnings() {
+        return costPerKg;
+    }
+};
+
+int main() {
+    Plastic plastic;
+    double earnings = plastic.calculateEarnings();
+    std::cout << "Kian earns $" << earnings << " when selling 1 kg of plastic." << std::endl;
+
+    return 0;
+}

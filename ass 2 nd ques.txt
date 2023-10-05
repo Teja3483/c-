@@ -1,0 +1,21 @@
+#include <iostream>
+
+class Bus {
+private:
+    int capacity;
+
+public:
+ Bus(int capacity) {
+        this->capacity = capacity;
+    }
+    int calculateTotalCapacity(int numberOfBuses) {
+        return capacity * numberOfBuses;
+    }
+};
+int main() {
+    Bus bus(48);
+    int numberOfBuses = 3;
+    int totalCapacity = bus.calculateTotalCapacity(numberOfBuses);
+    std::cout << "Three buses can carry a total of " << totalCapacity << " children." << std::endl;
+    return 0;
+}
